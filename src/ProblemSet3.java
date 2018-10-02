@@ -59,7 +59,7 @@ public class ProblemSet3 {
 		System.out.println("");
 		
 		System.out.println("Problem10");
-		ps3.isPrime(2);
+		ps3.isPrime(9);
 		System.out.println("");
 	}
 		
@@ -205,8 +205,7 @@ public class ProblemSet3 {
 	public void isPrime(int n) {
 		int counter = 2;
 		boolean isPrime = true;
-		while ((counter < (double) Math.sqrt(n)) && isPrime) {
-			System.out.println(counter);
+		while ((counter <= (double) Math.sqrt(n)) && isPrime) {
 			if (n % counter == 0) {
 				isPrime = false;
 			}
