@@ -65,13 +65,13 @@ public class ProblemSet3 {
 		
 	public void dateFashion(int you, int date) {
 		if (you <= 2 || date <= 2) {
-			System.out.println("NO");
+			System.out.println("NO.");
 		}
 		else if (you >= 8 || date >= 8) {
-			System.out.println("YES");
+			System.out.println("YES.");
 		}
 		else {
-			System.out.println("MAYBE");
+			System.out.println("MAYBE.");
 		}
 	}
 	
@@ -87,7 +87,7 @@ public class ProblemSet3 {
 			System.out.println(str);
 		}
 		else {
-			System.out.println(toreturn);
+			System.out.println(toreturn + ".");
 		}
 		
 	}
@@ -96,18 +96,18 @@ public class ProblemSet3 {
 		if (temp <= 100 && temp >= 60) {
 			if (temp > 90) {
 				if (isSummer) {
-					System.out.println("YES");
+					System.out.println("YES.");
 				}
 				else {
-					System.out.println("NO");
+					System.out.println("NO.");
 				}
 			} 
 			else {
-				System.out.println("YES");
+				System.out.println("YES.");
 			}
 		}
 		else {
-			System.out.println("NO");
+			System.out.println("NO.");
 		}
 	}
 	
@@ -131,18 +131,18 @@ public class ProblemSet3 {
 		if (goal <= max) {
 			if (big >= (goal / 5)) {
 				if (small >= goal % 5) {
-					System.out.println("YES");
+					System.out.println("YES.");
 				}
 				else {
-					System.out.println("NO");
+					System.out.println("NO.");
 				}
 			}
 			else {
-				System.out.println("YES");
+				System.out.println("YES.");
 			}
 		}
 		else {
-			System.out.println("NO");
+			System.out.println("NO.");
 		}
 	}
 	
@@ -162,7 +162,7 @@ public class ProblemSet3 {
 				sum -= (c*2);
 			}
 		}
-		System.out.println(sum);
+		System.out.println(sum + ".");
 		
 		
 	}
@@ -180,7 +180,7 @@ public class ProblemSet3 {
 				sum -= 13;
 			}
 		}
-		System.out.println(sum);
+		System.out.println(sum + ".");
 		
 	}
 	
@@ -189,16 +189,17 @@ public class ProblemSet3 {
 		for  (int i = n; i > 1; i--) {
 			factorial *= i;
 		}
-		System.out.println(factorial);
+		System.out.println(n + "! = " + factorial + ".");
 	}
 	
 	public void factorialWithWhile(int n) {
+		int number = n;
 		int factorial = 1;
-		while (n > 1) {
-			factorial *= n;
-			n--;
+		while (number > 1) {
+			factorial *= number;
+			number--;
 		}
-		System.out.println(factorial);
+		System.out.println(n + "! = " +factorial + ".");
 		
 	}
 	
@@ -213,16 +214,16 @@ public class ProblemSet3 {
 			
 		}
 		
-		if (n == 1) {
+		if (n == 1 || n == 0) {
 			isPrime = false;
 		}
 		
 		if (isPrime) {
-			System.out.println("Prime");
+			System.out.println("PRIME.");
 		}
 		
 		else {
-			System.out.println("Not Prime");
+			System.out.println("NOT PRIME.");
 		}
 	}
 }
